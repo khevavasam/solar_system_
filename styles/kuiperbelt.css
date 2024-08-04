@@ -1,0 +1,308 @@
+/* kuiperbelt.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Черный фон для всего сайта */
+    color: #fff; /* Белый цвет текста */
+}
+
+
+header {
+    background-color: #333;
+    padding: 1em 0;
+    text-align: center;
+}
+header h1 {
+
+    margin: 0; /* Убираем внешние отступы у заголовка */
+    color: #fff; /* Белый цвет текста заголовка */
+
+}
+
+
+/* Стили для кнопки меню,скрыто по умолчанию с помощью display: none*/
+.nav-button {
+  display: none;
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+     background-color: #444;
+     text-align: center;
+ }
+
+.text-content {
+    flex: 2; /* Занимает 2/3 ширины */
+    max-width: 40%; /* Ограничивает ширину текста */
+    color: #fff; /* Белый цвет текста */
+    background: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный фон */
+    padding: 1em; /* Внутренние отступы */
+    border-radius: 8px; /* Сглаживание углов */
+     font-size: 1.5em; /* Увеличиваем размер текста */
+
+    }
+
+nav {
+    background-color: #444;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; /* Отображаем элементы списка в одну линию */
+    padding: 0; /* Отступ справа между элементами списка */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    padding: 2em;
+}
+
+.simulation-container {
+    width: 66.67%;  /* 2/3 ширины экрана */
+    height: 400%;   /* 3 раза больше по высоте */
+    margin: 2em auto;  /* Центрируем контейнер */
+    overflow: hidden; /* Скрытие части изображения, выходящей за границы контейнера */
+}
+
+.simulation-container {
+    width: 66.67%;  /* 2/3 ширины экрана */
+    height: 700px;  /* фиксированная высота */
+    background-color: #000;
+    margin: 0 auto 2em;  /* Центрируем контейнер и добавляем отступ снизу */
+    position: relative; /* Относительное позиционирование */
+}
+
+.simulation-container iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.text-content {
+    margin-top: 2em;  /* Отступ сверху для текста */
+    padding: 0 1em;  /* Отступы по бокам для текста */
+}
+
+/* Контейнер для текста */
+.text-content {
+    flex: 2; /* Занимает 2/3 ширины */
+    padding-right: 20px;
+}
+/* mercury.css */
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Фон для планеты Mercury */
+.planet-background {
+    background-image: url('../images/kuiperbelt1.jpg');
+    background-size: cover;
+    background-position: center top;
+    height: 90vh; /* Высота фонового изображения */
+    display: flex;
+    flex-direction: column; /* Располагаем элементы в столбец */
+    justify-content: flex-end; /* Выравнивание контента внизу */
+    padding: 2em;
+    box-sizing: border-box; /* Учесть padding в высоте блока */
+
+}
+
+.planet-background h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    margin-left: 75%; /* Подвигаем заголовок вправо на половину ширины контейнера */
+    transform: translateX(-50%); /* Центрируем заголовок относительно его собственной ширины */
+}
+
+.planet-background p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 60%;
+    margin-left: 75%; /* Подвигаем текст вправо на половину ширины контейнера */
+    transform: translateX(-50%); /* Центрируем текст относительно его собственной ширины */
+}
+
+.content {
+    padding: 0 300px; /* Отступы справа и слева */
+}
+
+/* Стили для заголовков */
+h2 {
+    font-size: 2.5em; /* Увеличенный размер шрифта для подзаголовков */
+}
+
+/* расположение для навигации */
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #000; /* Черный фон */
+    color: #fff; /* Белый текст */
+}
+
+.intro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+
+/* Позиционирование боковой навигации в правом отступе */
+.side-navigation {
+    background-color: #333; /* Темный фон для навигации */
+    border: 1px solid #444; /* Темная рамка для навигации */
+    border-radius: 8px; /* Скругленные углы навигации */
+    padding: 16px; /* Внутренние отступы для навигации */
+    width: 200px; /* Ширина навигации */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень для навигации */
+    position: fixed; /* Фиксированное позиционирование */
+    top: 20px; /* Отступ сверху для навигации */
+    right: 0; /* Отступ справа для навигации */
+    z-index: 1000; /* Поверх других элементов */
+}
+
+.side-navigation ul {
+    list-style: none; /* Убираем маркеры списка в навигации */
+    padding: 0; /* Убираем внутренние отступы списка в навигации */
+    margin: 0; /* Убираем внешние отступы списка в навигации */
+}
+
+.side-navigation li {
+    margin-bottom: 10px; /* Отступ снизу между элементами списка в навигации */
+}
+
+.side-navigation a {
+    text-decoration: none;
+    color: #ddd; /* Светлый цвет текста */
+    font-weight: bold;
+    padding: 8px;
+    display: block;
+    border-radius: 4px;
+}
+
+.side-navigation a:hover {
+    background-color: #444; /* Темный фон при наведении */
+    color: #fff; /* Белый текст при наведении */
+}
+
+/ text-section h2 {
+    text-align: left; /* Выравнивание заголовка текста влево */
+}
+
+/ .text-section p {
+    text-align: left; /* Выравнивание текста абзаца влево */
+}
+
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+/* Секция "Discover More Topics From NASA" */
+.more-topics {
+  text-align: center; /* Выравнивание текста по центру */
+  padding: 2em 0; /* Отступы сверху и снизу */
+  background-color: #000; /* Черный фон */
+  color: #fff; /* Белый цвет текста */
+
+}
+
+.more-topics h2 {
+    font-size: 2em; /* Размер шрифта заголовка */
+    margin-bottom: 1em; /* Нижний отступ */
+}
+
+/* Сетка для карточек */
+.topics-grid {
+    display: flex; /* Используем flexbox для расположения карточек */
+    justify-content: space-around; /* Распределение пространства между карточками */
+    flex-wrap: wrap; /* Разрешаем перенос карточек на новую строку */
+    gap: 1em; /* Расстояние между карточками */
+}
+
+/* Карточка */
+.topic-card {
+    background-color: #000; /* Черный фон карточки */
+    border-radius: 8px; /* Скругленные углы */
+    overflow: hidden; /* Обрезаем контент, выходящий за границы карточки */
+    width: 20%; /* Ширина карточки */
+    min-width: 200px; /* Минимальная ширина карточки */
+    text-align: left; /* Выравнивание текста по левому краю */
+    position: relative; /* Для позиционирования текста внутри карточки */
+}
+
+.topic-card img {
+    width: 100%; /* Ширина изображения равна ширине карточки */
+    height: auto; /* Автоматическая высота изображения */
+    display: block; /* Отображение как блочный элемент */
+}
+
+.topic-card a {
+    color: #fff; /* Белый цвет текста ссылки */
+    font-weight: bold; /* Жирный шрифт */
+    font-size: 1.2em; /* Размер шрифта */
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 10px; /* Отступ от нижнего края карточки */
+    left: 10px; /* Отступ от левого края карточки */
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+}
+
+.topic-card a:hover {
+    color: #e74c3c; /* Цвет текста при наведении */
+}
+
+/* Установить черный фон для секции */
+.more-topics {
+    background-color: #000;
+    color: #fff;
+    padding: 20px; /* Добавляем отступ для визуальной эстетики */
+}
+
+/* Увеличить размер карточек */
+.topic-card {
+    display: block; /* Делаем карточку блочным элементом */
+    width: 22%; /* Увеличиваем ширину карточек */
+    margin: 10px; /* Добавляем отступы между карточками */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: inherit; /* Наследуем цвет текста */
+    transition: transform 0.3s; /* Плавный переход при наведении */
+}
+
+.topic-card:hover {
+    transform: scale(1.05); /* Увеличиваем карточку при наведении */
+}
+
+.topic-card img {
+    width: 100%;
+    height: auto;
+    display: block; /* Убираем пробелы вокруг изображения */
+}
+
+.topic-card p {
+    margin: 10px 0 0;
+    text-align: center; /* Выравниваем текст по центру */
+    font-size: 1.2em;
+}
+
+.topic-card:hover p {
+    color: #e74c3c; /* Изменяем цвет текста при наведении */
+}

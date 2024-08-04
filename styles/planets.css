@@ -1,0 +1,232 @@
+/* planets.css */
+
+/* Основные стили для страницы */
+body {
+    font-family: Arial, sans-serif; /* Шрифт страницы */
+    margin: 0; /* Убираем внешние отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    background-color: #000; /* Черный фон для всего сайта */
+    color: #fff; /* Белый цвет текста */
+}
+
+/* Стили для заголовка и навигации */
+header {
+    background-color: #333; /* Темно-серый фон для заголовка */
+    padding: 1em 0; /* Внутренние отступы сверху и снизу */
+    text-align: center; /* Центрирование текста */
+}
+
+header h1 {
+    margin: 0; /* Убираем внешние отступы у заголовка */
+    color: #fff; /* Белый цвет текста заголовка */
+}
+
+header nav ul {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+header nav ul li {
+    display: inline; /* Встроенный блок для пунктов меню */
+    margin: 0 1em; /* Отступы между пунктами меню */
+}
+
+header nav ul li a {
+    color: #fff; /* Белый цвет текста ссылок */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    font-weight: bold; /* Жирный шрифт для ссылок */
+}
+
+/* Стили для фонового изображения в верхней части страницы */
+.planet-background {
+    background-image: url('../images/12.jpg'); /* Путь к фоновому изображению */
+    background-size: cover; /* Масштабирование изображения по размеру контейнера */
+    background-position: center; /* Центрирование изображения */
+    height: 60vh; /* Высота фонового изображения */
+    display: flex; /* Используем flexbox для расположения контента */
+    flex-direction: column; /* Располагаем элементы в столбец */
+    justify-content: flex-end; /* Выравнивание контента внизу */
+    padding: 2em; /* Внутренние отступы */
+    box-sizing: border-box; /* Учесть padding в высоте блока */
+    color: #fff; /* Белый цвет текста */
+}
+
+.planet-background h5 {
+    font-size: 3em; /* Размер шрифта заголовка */
+    margin-bottom: 0.5em; /* Нижний отступ */
+    text-align: left;; /* Выравнивание текста по правому краю(left) */
+}
+
+.planet-background p {
+    font-size: 1.2em; /* Размер шрифта текста */
+    line-height: 1.6; /* Междустрочный интервал */
+    max-width: 60%; /* Максимальная ширина блока с текстом */
+    margin-bottom: 0.5em; /* Нижний отступ */
+    text-align: left;/* Выравнивание текста по правому краю(left) */
+}
+
+/* Стили для секции планет */
+.planets-section {
+    padding: 2em; /* Внутренние отступы */
+    background-color: #000; /* Черный фон секции */
+    color: #fff; /* Белый цвет текста */
+}
+
+.planets-section h2 {
+    text-align: left;; /* Центрирование заголовка */
+    margin-bottom: 1em; /* Нижний отступ */
+}
+
+/* Стили для карточек планет */
+.planet-cards {
+    display: flex; /* Используем flexbox для расположения карточек */
+    flex-wrap: wrap; /* Разрешаем перенос карточек на новую строку */
+    justify-content: space-around; /* Распределение пространства между карточками */
+}
+
+.planet-card {
+    background-color: #000; /* Темно-серый фон карточки */
+    border-radius: 8px; /* Скругленные углы */
+    overflow: hidden; /* Обрезаем контент, выходящий за границы карточки */
+    width: 22%; /* Ширина карточки */
+    margin: 10px; /* Отступы между карточками */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #fff; /* Белый цвет текста */
+    transition: transform 0.3s ease; /* Плавный переход при наведении */
+}
+
+.planet-card:hover {
+    transform: scale(1.05); /* Увеличиваем карточку при наведении */
+}
+
+.planet-card img {
+    width: 100%; /* Ширина изображения равна ширине карточки */
+    height: auto; /* Автоматическая высота изображения */
+}
+
+.planet-card h3,
+.planet-card p {
+    margin: 10px; /* Внутренние отступы */
+    text-align: center; /* Центрирование текста */
+}
+
+.planet-card p:last-child {
+    font-weight: bold; /* Жирный шрифт для последнего абзаца */
+}
+
+
+
+
+
+/* Стили для нижнего колонтитула */
+footer {
+    background-color: #333; /* Темно-серый фон */
+    padding: 1em 0; /* Внутренние отступы сверху и снизу */
+    text-align: center; /* Центрирование текста */
+    width: 100%; /* Ширина на весь экран */
+}
+
+
+
+
+bbbbbbbbbbbbb
+
+
+
+.more-topics h2 {
+    font-size: 2em; /* Размер шрифта заголовка */
+    margin-bottom: 1em; /* Нижний отступ */
+}
+
+/* Секция "Discover More Topics From NASA" */
+.more-topics {
+    text-align: center; /* Центрирование текста */
+    padding: 2em 0; /* Отступы сверху и снизу */
+    background-color: #000; /* Черный фон */
+    color: #fff; /* Белый цвет текста */
+}
+
+.more-topics h2 {
+    font-size: 2em; /* Размер шрифта заголовка */
+    margin-bottom: 1em; /* Нижний отступ заголовка */
+}
+
+/* Сетка для карточек */
+.topics-grid {
+    display: flex; /* Использование Flexbox для расположения карточек */
+    justify-content: space-around; /* Распределение пространства между карточками */
+    flex-wrap: wrap; /* Разрешение переноса карточек на новую строку */
+    gap: 1em; /* Расстояние между карточками */
+}
+
+/* Карточка в секции "Discover More Topics From NASA" */
+.topic-card {
+    background-color: #000; /* Черный фон карточки */
+    border-radius: 8px; /* Скругленные углы */
+    overflow: hidden; /* Обрезаем контент, выходящий за границы карточки */
+    width: 20%; /* Ширина карточки */
+    min-width: 200px; /* Минимальная ширина карточки */
+    text-align: left; /* Выравнивание текста по левому краю */
+    position: relative; /* Для позиционирования текста внутри карточки */
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+    color: #fff; /* Белый цвет текста */
+    transition: transform 0.3s; /* Плавный переход при трансформации */
+}
+
+/* Эффект при наведении на карточку в секции "Discover More Topics From NASA" */
+.topic-card:hover {
+    transform: scale(1.05); /* Увеличиваем карточку при наведении */
+}
+
+/* Изображение внутри карточки в секции "Discover More Topics From NASA" */
+.topic-card img {
+    width: 100%; /* Ширина изображения равна ширине карточки */
+    height: auto; /* Автоматическая высота изображения */
+    display: block; /* Отображение как блочный элемент */
+}
+
+/* Текст внутри карточки в секции "Discover More Topics From NASA" */
+.topic-card p {
+    margin: 10px 0 0; /* Отступы вокруг текста */
+    text-align: center; /* Центрирование текста */
+    font-size: 1.2em; /* Размер шрифта */
+}
+
+/* Изменение цвета текста при наведении на карточку в секции "Discover More Topics From NASA" */
+.topic-card:hover p {
+    color: #e74c3c; /* Красный цвет текста */
+}
+
+/* Стиль футера */
+footer {
+    background-color: #333; /* Темно-серый фон */
+    padding: 1em 0; /* Отступы сверху и снизу */
+    text-align: center; /* Центрирование текста */
+    width: 100%; /* Ширина равна 100% */
+}
+
+
+@media (max-width: 768px) {
+    .mySwiper {
+        display: block;
+    }
+    .planet-cards {
+        display: none;
+    }
+    .more-topics{
+      display: none;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .mySwiper {
+        display: none;
+    }
+    .planet-cards {
+        display: flex;
+    }
+    .more-topics1{
+      display: none;
+    }
+}

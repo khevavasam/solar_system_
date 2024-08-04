@@ -1,0 +1,318 @@
+/* Общий сброс стилей для мобильных устройств */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Черный фон */
+    color: #fff; /* Белый текст */
+}
+
+/* Основное содержание */
+main {
+    padding: 1em;
+}
+
+/* Заголовок */
+header {
+    background-color: #333;
+    padding: 1em;
+    text-align: cent;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.text-content {
+    text-align: justify;
+    padding: 20px;
+    flex: 2;
+    max-width: 40%;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1em;
+    border-radius: 8px;
+    font-size: 1.5em;
+}
+
+/* Стили для навигации */
+nav ul.menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #444;
+    text-align: center;
+}
+
+
+
+.simulation-container {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    margin: 0 auto 2em;
+    position: relative;
+}
+
+.simulation-container iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* Фон для планеты */
+.planet-background {
+    background-image: url('../images/jupiter.jpg');
+    background-size: cover;
+    background-position: left top;
+    height: 40vh; /* Высота картинки планеты */
+}
+
+.planet-background h1 {
+    font-size: 1.em;
+    margin-bottom: 1  em;
+    text-align: center;
+}
+
+.planet-background p {
+    font-size: 1.0em;
+    line-height: 1.4;
+    width: 100%;
+    text-align: left;
+}
+
+.content {
+    padding: 0 00px;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+/* Стили для боковой навигации */
+.side-navigation {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.side-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-navigation li {
+    margin-bottom: 10px;
+}
+
+.side-navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px;
+    display: block;
+    border-radius: 4px;
+}
+
+.side-navigation a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Стили для кнопки бургер */
+.nav-button {
+    display: none; /* Скрыть кнопку по умолчанию */
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Показать кнопку бургер на мобильных устройствах */
+@media screen and (max-width: 768px) {
+
+    .side-navigation {
+        width: 100%;
+    }
+
+    .nav-button {
+        display: block;
+    }
+
+    .side-navigation ul {
+        display: none;
+    }
+
+    .side-navigation ul.show {
+        display: block;
+    }
+}
+
+.more-topics {
+    text-align: center;
+    padding: 2em 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.more-topics h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.topics-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.topic-card {
+    background-color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 20%;
+    min-width: 200px;
+    text-align: left;
+    position: relative;
+}
+
+.topic-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.topic-card a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-decoration: none;
+}
+
+.topic-card a:hover {
+    color: #e74c3c;
+}
+
+.topic-card p {
+    margin: 10px 0 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.topic-card:hover p {
+    color: #e74c3c;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .planet-background {
+        height: 60vh;
+        padding: 1em;
+    }
+
+    .planet-background h1,
+    .planet-background p {
+        margin-left: 0;
+        text-align: center;
+        transform: none;
+    }
+
+    .text-content {
+        max-width: 100%;
+        padding: 1em;
+        font-size: 1.2em;
+    }
+
+    .simulation-container {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .side-navigation {
+        width: 100%;
+        position: static;
+        margin-bottom: 2em;
+    }
+
+    .more-topics .topics-grid {
+        flex-direction: column;
+    }
+
+    .topic-card {
+        width: 100%;
+        margin: 1em 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .planet-background {
+        height: 40vh;
+        padding: 1em;
+    }
+
+    .planet-background h1,
+    .planet-background p {
+        margin-left: 0;
+        text-align: center;
+        transform: none;
+    }
+
+    .text-content {
+        max-width: 100%;
+        padding: 1em;
+        font-size: 1em;
+    }
+
+    .simulation-container {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .side-navigation {
+        width: 100%;
+        position: static;
+        margin-bottom: 2em;
+    }
+
+    .more-topics .topics-grid {
+        flex-direction: column;
+    }
+
+    .topic-card {
+        width: 100%;
+        margin: 1em 0;
+    }
+}

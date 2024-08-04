@@ -1,0 +1,180 @@
+/* Основные стили для body */
+body {
+    font-family: Arial, sans-serif; /* Основной шрифт */
+    margin: 0; /* Убираем внешние отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    background-color: #000; /* Черный фон для всего сайта */
+    color: #fff; /* Белый цвет текста */
+    font-family: 'Montserrat', sans-serif; /* Шрифт Montserrat */
+    min-height: 100vh; /* Минимальная высота страницы */
+    position: relative; /* Относительное позиционирование для псевдоэлементов */
+}
+
+/* Псевдоэлементы для вставки изображений слева и справа */
+body::before, body::after {
+    content: ""; /* Пустое содержимое для псевдоэлементов */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 60%; /* Расположение по центру по вертикали */
+    transform: translateY(-70%); /* Центрирование по вертикали */
+    width: 500px; /* Ширина изображений */
+    height: 500px; /* Высота изображений */
+    background-size: cover; /* Покрытие всего контейнера */
+    background-repeat: no-repeat; /* Без повторения изображений */
+    opacity: 0.9; /* Полупрозрачность изображений */
+}
+
+/* Псевдоэлемент для изображения слева */
+body::before {
+    right: 350 px; /* Расположение слева */
+    background-image: url('../images/astro.jpg'); /* Путь к вашему изображению слева */
+    border-radius: 10px;
+}
+
+/* Псевдоэлемент для изображения справа */
+body::after {
+    right: 0.1px; /* Расположение справа */
+    background-image: url('../images/444.jpg'); /* Путь к вашему изображению справа */
+    border-radius: 10px;
+}
+
+/* Стили для header */
+header {
+    background-color: #333; /* Фон header */
+    padding: 1em 0; /* Внутренние отступы */
+    text-align: center; /* Выравнивание текста по центру */
+}
+header h1 {
+    margin: 0; /* Убираем внешние отступы у заголовка */
+    color: #fff; /* Белый цвет текста заголовка */
+}
+
+
+/* Стили для текстового контента */
+.text-content {
+    flex: 2; /* Занимает 2/3 ширины */
+    max-width: 40%; /* Ограничивает ширину текста */
+    color: #fff; /* Белый цвет текста */
+    background: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный фон */
+    padding: 1em; /* Внутренние отступы */
+    border-radius: 8px; /* Сглаживание углов */
+    font-size: 1.5em; /* Увеличиваем размер текста */
+}
+
+/* Стили для навигации */
+nav {
+    background-color: #444; /* Фон навигации */
+    padding: 1em 0; /* Внутренние отступы */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+nav ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+nav ul li {
+    display: inline; /* Отображаем элементы списка в одну линию */
+    margin: 0 10px; /* Отступы между элементами списка */
+}
+
+nav ul li a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #fff; /* Белый цвет текста ссылок */
+    font-weight: bold; /* Жирное начертание текста */
+}
+
+/* Стили для navbar */
+.navbar {
+    width: 100%; /* Ширина navbar */
+    background-color: #333; /* Фон navbar */
+    padding: 10px 0; /* Внутренние отступы */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.navbar h1 {
+    margin: 0; /* Убираем внешние отступы */
+    color: white; /* Белый цвет текста */
+    font-size: 24px; /* Размер текста */
+}
+
+.nav-links {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренние отступы */
+    margin: 0; /* Убираем внешние отступы */
+    display: flex; /* Используем flexbox для расположения элементов */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Отступы между элементами списка */
+    cursor: pointer; /* Курсор при наведении */
+    color: white; /* Белый цвет текста */
+}
+
+/* Стили для контейнера теста */
+.quiz-container {
+    background: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый фон */
+    padding: 130px; /* Внутренние отступы */
+    border-radius: 30px; /* Сглаживание углов */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень */
+    width: 80%; /* Ширина контейнера */
+    max-width: 500px; /* Максимальная ширина */
+    margin-top: 30px; /* Отступ сверху */
+    transform: translateX(75%); /* Смещение по горизонтали */
+}
+
+.quiz-question, .quiz-result {
+    max-width: 600px; /* Максимальная ширина */
+}
+
+button {
+    background-color: #5DC5FF; /* Фон кнопки */
+    color: #000; /* Цвет текста кнопки */
+    border: none; /* Без границы */
+    padding: 10px 20px; /* Внутренние отступы */
+    margin-top: 20px; /* Отступ сверху */
+    border-radius: 5px; /* Сглаживание углов */
+    cursor: pointer; /* Курсор при наведении */
+}
+
+button:hover {
+    background-color: #8ED6FF; /* Фон кнопки при наведении */
+}
+
+.display-none {
+    display: none; /* Скрываем элемент */
+}
+
+.answer-btn.correct {
+    background-color: #4CAF50; /* Фон правильного ответа */
+}
+
+.answer-btn.wrong {
+    background-color: #F44336; /* Фон неправильного ответа */
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Вертикальное расположение элементов */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Отступы между элементами списка */
+    }
+
+    .quiz-container {
+        padding: 30px; /* Внутренние отступы */
+        width: 90%; /* Ширина контейнера */
+        transform: translateX(0); /* Убираем смещение по горизонтали */
+    }
+
+    .text-content {
+        max-width: 90%; /* Максимальная ширина текста */
+        font-size: 1em; /* Размер текста */
+    }
+
+    body::before, body::after {
+        display: none; /* Отключаем изображения на маленьких экранах */
+    }
+}

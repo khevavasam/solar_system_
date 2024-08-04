@@ -1,0 +1,121 @@
+/* Основной CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.planet-background {
+    background-image: url('../images/venus.jpg');
+    background-size: cover;
+    background-position: center top;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.planet-background h5 {
+    margin: 0;
+}
+
+.planets-section {
+    padding: 20px;
+}
+
+.planet-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.planet-card {
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 48%;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.planet-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #444;
+}
+
+.planet-card h3 {
+    margin: 10px 0 5px;
+}
+
+.planet-card p {
+    margin: 5px 0;
+}
+
+.more-topics {
+    padding: 20px;
+}
+
+.topics-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.topic-card {
+    width: 48%;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.topic-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    border-top: 1px solid #444;
+}
+
+@media (max-width: 768px) {
+    .planet-cards {
+        display: none;
+    }
+    .swiper-container {
+        display: block;
+    }
+}

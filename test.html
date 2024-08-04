@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Quiz</title>
+    <link rel="stylesheet" href="styles/test.css">
+</head>
+<body>
+    <header>
+        <h1>Solar System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sun.html">Sun</a></li>
+                <li><a href="mercury.html">Mercury</a></li>
+                <li><a href="venus.html">Venus</a></li>
+                <li><a href="earth.html">Earth</a></li>
+                <li><a href="mars.html">Mars</a></li>
+                <li><a href="jupiter.html">Jupiter</a></li>
+                <li><a href="saturn.html">Saturn</a></li>
+                <li><a href="uranus.html">Uranus</a></li>
+                <li><a href="neptune.html">Neptune</a></li>
+                                      
+
+                <!-- Добавьте ссылки на другие планеты здесь -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="quiz-container">
+        <div class="quiz-start">
+            <h2>Welcome to the Solar System Quiz</h2>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+        <div class="quiz-question display-none">
+            <p id="question-text"></p>
+            <div id="answers-container"></div>
+            <button id="next-btn" class="display-none">Next</button>
+        </div>
+        <div class="quiz-result display-none">
+            <h2>Quiz Results</h2>
+            <div id="result-container"></div>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="scripts/test.js"></script>
+</body>
+</html>
