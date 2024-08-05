@@ -1,3 +1,4 @@
+
 const startBtn = document.getElementById('start-btn');
 const nextBtn = document.getElementById('next-btn');
 const restartBtn = document.getElementById('restart-btn');
@@ -27,7 +28,7 @@ const questions = [
     {
         question: "Which planet has the most moons?",
         answers: ["Earth", "Mars", "Jupiter", "Saturn"],
-        correct: "Jupiter"
+        correct: "Saturn"
     },
     {
         question: "What is the largest planet in our solar system?",
