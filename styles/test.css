@@ -26,14 +26,14 @@ body::before, body::after {
 /* Псевдоэлемент для изображения слева */
 body::before {
     right: 50 px; /* Расположение слева */
-    background-image: url('../images/astro.jpg'); /* Путь к вашему изображению слева */
+    background-image: url('../images/o.jpg'); /* Путь к вашему изображению слева */
     border-radius: 10px;
 }
 
 /* Псевдоэлемент для изображения справа */
 body::after {
     right: 0.1px; /* Расположение справа */
-    background-image: url('../images/444.jpg'); /* Путь к вашему изображению справа */
+    background-image: url('../images/44.jpg'); /* Путь к вашему изображению справа */
     border-radius: 10px;
 }
 
