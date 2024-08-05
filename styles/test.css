@@ -16,8 +16,8 @@ body::before, body::after {
     position: absolute; /* Абсолютное позиционирование */
     top: 60%; /* Расположение по центру по вертикали */
     transform: translateY(-70%); /* Центрирование по вертикали */
-    width: 500px; /* Ширина изображений */
-    height: 500px; /* Высота изображений */
+    width: 300px; /* Ширина изображений */
+    height: 300px; /* Высота изображений */
     background-size: cover; /* Покрытие всего контейнера */
     background-repeat: no-repeat; /* Без повторения изображений */
     opacity: 0.9; /* Полупрозрачность изображений */
@@ -25,7 +25,7 @@ body::before, body::after {
 
 /* Псевдоэлемент для изображения слева */
 body::before {
-    right: 350 px; /* Расположение слева */
+    right: 50 px; /* Расположение слева */
     background-image: url('../images/astro.jpg'); /* Путь к вашему изображению слева */
     border-radius: 10px;
 }
@@ -118,9 +118,9 @@ nav ul li a {
     border-radius: 30px; /* Сглаживание углов */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень */
     width: 80%; /* Ширина контейнера */
-    max-width: 500px; /* Максимальная ширина */
+    max-width: 450px; /* Максимальная ширина */
     margin-top: 30px; /* Отступ сверху */
-    transform: translateX(75%); /* Смещение по горизонтали */
+    transform: translateX(40%); /* Смещение по горизонтали */
 }
 
 .quiz-question, .quiz-result {
